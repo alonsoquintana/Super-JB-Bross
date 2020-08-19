@@ -16,7 +16,11 @@ public class CameraFollow : MonoBehaviour{
         
     void Update()
     {
-        Vector3 point = GetComponent<Camera>().WorldToViewportPoint(target.position);
-        Debug.Log(point);
+        Camera camera = GetComponent<Camera>();
+        Vector3 point = camera.WorldToViewportPoint(target.position);
+        Vector3 delta = target.position - camera.ViewportToWorldPoint(new Vector3(offset.x, offset.y, point.z));
+        Vector3 destination = point + delta;
+        destination = new Vector3(destination.x, offset.y, destination.z);
+        this.transform.position = Vector3.SmoothDamp(this.transform.position, destination, ref velocity, dampTime);
     }   
 }
