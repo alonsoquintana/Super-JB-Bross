@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour{
 
     public Transform target;
-    public Vector2 offset = new Vector2(0.1f, 10f);
+    public Vector3 offset = new Vector3(0.1f, 0.0f, -10.0f);
     public float dampTime = 0.3f;
     public Vector3 velocity = Vector3.zero;
 
@@ -20,7 +20,7 @@ public class CameraFollow : MonoBehaviour{
         Vector3 point = camera.WorldToViewportPoint(target.position);
         Vector3 delta = target.position - camera.ViewportToWorldPoint(new Vector3(offset.x, offset.y, point.z));
         Vector3 destination = point + delta;
-        destination = new Vector3(destination.x, offset.y, destination.z);
+        destination = new Vector3(destination.x, offset.y, offset.z);
         this.transform.position = Vector3.SmoothDamp(this.transform.position, destination, ref velocity, dampTime);
     }   
 }
