@@ -42,7 +42,7 @@ public class LevelGenerator : MonoBehaviour{
         }
 
         Vector3 correction = new Vector3(spawPosition.x-currentBlock.startPoint.position.x, spawPosition.y-currentBlock.startPoint.position.y, 0);
-              
+        
         currentBlock.transform.position = correction;
         currentBlocks.Add(currentBlock);
     }

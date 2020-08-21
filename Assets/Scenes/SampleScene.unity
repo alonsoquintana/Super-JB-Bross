@@ -205,8 +205,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allTheLevelBlocks:
-  - {fileID: 8063149910313147213, guid: 7c658c2896b8ed24fb74d9b295041218, type: 3}
   - {fileID: 6866700229705942195, guid: b4cc62b833f2476439f581bf0f980acd, type: 3}
+  - {fileID: 8063149910313147213, guid: 7c658c2896b8ed24fb74d9b295041218, type: 3}
+  - {fileID: 4427166726699708098, guid: 3ec646b6578d4494b912535431b6d97d, type: 3}
   levelStartPoint: {fileID: 845660366}
   currentBlocks: []
 --- !u!4 &296792183
@@ -558,7 +559,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845660365}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.3, y: -4.98, z: 0}
+  m_LocalPosition: {x: -10.371, y: -5.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -712,7 +713,7 @@ PrefabInstance:
         type: 0}
     - target: {fileID: 4125200938726302, guid: ecb1ee84397a74f4795ba835081fc272, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.83
+      value: -8.62
       objectReference: {fileID: 0}
     - target: {fileID: 4125200938726302, guid: ecb1ee84397a74f4795ba835081fc272, type: 3}
       propertyPath: m_LocalPosition.y
